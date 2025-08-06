@@ -1,4 +1,4 @@
-package com.example.d424_softwareengineeringcapstone.entities;
+package com.digikixusa.vacationplanner.entities;
 
 
 import androidx.room.Entity;

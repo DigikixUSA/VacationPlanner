@@ -1,4 +1,4 @@
-package com.example.d424_softwareengineeringcapstone.UI;
+package com.digikixusa.vacationplanner.UI;
 
 import android.app.AlarmManager;
 import android.app.DatePickerDialog;
@@ -24,10 +24,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.d424_softwareengineeringcapstone.R;
-import com.example.d424_softwareengineeringcapstone.database.Repository;
-import com.example.d424_softwareengineeringcapstone.entities.Exc;
-import com.example.d424_softwareengineeringcapstone.entities.Vacation;
+import com.digikixusa.vacationplanner.R;
+import com.digikixusa.vacationplanner.database.Repository;
+import com.digikixusa.vacationplanner.entities.Exc;
+import com.digikixusa.vacationplanner.entities.Vacation;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 

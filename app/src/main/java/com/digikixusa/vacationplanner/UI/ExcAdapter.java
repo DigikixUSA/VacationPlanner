@@ -1,4 +1,4 @@
-package com.example.d424_softwareengineeringcapstone.UI;
+package com.digikixusa.vacationplanner.UI;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.d424_softwareengineeringcapstone.R;
+import com.digikixusa.vacationplanner.R;
 import com.example.d424_softwareengineeringcapstone.entities.Exc;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.d424_softwareengineeringcapstone.dao;
+package com.digikixusa.vacationplanner.dao;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -7,8 +7,8 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.d424_softwareengineeringcapstone.entities.Exc;
-import com.example.d424_softwareengineeringcapstone.entities.Vacation;
+import com.digikixusa.vacationplanner.entities.Exc;
+import com.digikixusa.vacationplanner.entities.Vacation;
 
 import java.util.List;
 

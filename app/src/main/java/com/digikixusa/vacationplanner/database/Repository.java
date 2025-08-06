@@ -1,11 +1,11 @@
-package com.example.d424_softwareengineeringcapstone.database;
+package com.digikixusa.vacationplanner.database;
 
 import android.app.Application;
 
-import com.example.d424_softwareengineeringcapstone.dao.ExcDAO;
-import com.example.d424_softwareengineeringcapstone.dao.VacationDAO;
-import com.example.d424_softwareengineeringcapstone.entities.Exc;
-import com.example.d424_softwareengineeringcapstone.entities.Vacation;
+import com.digikixusa.vacationplanner.dao.ExcDAO;
+import com.digikixusa.vacationplanner.dao.VacationDAO;
+import com.digikixusa.vacationplanner.entities.Exc;
+import com.digikixusa.vacationplanner.entities.Vacation;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;

@@ -1,4 +1,4 @@
-package com.example.d424_softwareengineeringcapstone.UI;
+package com.digikixusa.vacationplanner.UI;
 
 import android.os.Bundle;
 
@@ -10,8 +10,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.d424_softwareengineeringcapstone.R;
-import com.example.d424_softwareengineeringcapstone.entities.Vacation;
+import com.digikixusa.vacationplanner.R;
+import com.digikixusa.vacationplanner.entities.Vacation;
 
 import java.util.ArrayList;
 

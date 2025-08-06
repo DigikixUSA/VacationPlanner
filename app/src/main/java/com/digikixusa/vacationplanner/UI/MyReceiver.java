@@ -1,4 +1,4 @@
-package com.example.d424_softwareengineeringcapstone.UI;
+package com.digikixusa.vacationplanner.UI;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.core.app.NotificationCompat;
 
-import com.example.d424_softwareengineeringcapstone.R;
+import com.digikixusa.vacationplanner.R;
 
 
 public class MyReceiver extends BroadcastReceiver {

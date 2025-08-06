@@ -1,4 +1,4 @@
-package com.example.d424_softwareengineeringcapstone.database;
+package com.digikixusa.vacationplanner.database;
 
 import android.content.Context;
 
@@ -6,10 +6,10 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.d424_softwareengineeringcapstone.dao.ExcDAO;
-import com.example.d424_softwareengineeringcapstone.dao.VacationDAO;
-import com.example.d424_softwareengineeringcapstone.entities.Exc;
-import com.example.d424_softwareengineeringcapstone.entities.Vacation;
+import com.digikixusa.vacationplanner.dao.ExcDAO;
+import com.digikixusa.vacationplanner.dao.VacationDAO;
+import com.digikixusa.vacationplanner.entities.Exc;
+import com.digikixusa.vacationplanner.entities.Vacation;
 
 
 @Database(entities = {Vacation.class, Exc.class}, version = 2, exportSchema = false)

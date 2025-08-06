@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,11 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VacationPlanner"
         tools:targetApi="31">
-         <activity
+
+
+        <receiver
+            android:name=".UI.MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
             android:name=".UI.SearchResults"
             android:exported="false"
             android:label="Search Results"
-            android:parentActivityName=".UI.VacationList"/>
+            android:parentActivityName=".UI.VacationList" />
         <activity
             android:name=".UI.ExcDetails"
             android:exported="false"
