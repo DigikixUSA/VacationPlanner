@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".UI.VacationDetails">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_image2"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+<!-- App bar / top toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:title="Vacation Details"
+        android:titleTextColor="@color/text_primary"
+        app:navigationIconTint="@color/text_primary"
+        app:titleCentered="true" />
+
+    <!-- Scrollable details section -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/background_image2"
+        android:padding="24dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Vacation title -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#60000000">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="Title:"
+                    android:textColor="@color/text_light"
+                    android:textAppearance="@style/TextAppearance.Material3.LabelLarge" />
+
+                <EditText
+                    android:id="@+id/titletext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:hint="Hawaii Adventure"
+                    android:textColor="@color/text_light"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_marginBottom="16dp"/>
+            </LinearLayout>
+
+
+
+            <!-- Hotel -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#60000000">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="Hotel:"
+                    android:textColor="@color/text_light"
+                    android:textAppearance="@style/TextAppearance.Material3.LabelLarge"/>
+
+                <EditText
+                    android:id="@+id/hoteltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textColor="@color/text_light"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Hilton Waikiki"/>
+            </LinearLayout>
+
+
+            <!-- Start date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#60000000">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="Start date:"
+                    android:textColor="@color/text_light"
+                    android:textAppearance="@style/TextAppearance.Material3.LabelLarge"/>
+
+                <TextView
+                    android:id="@+id/startdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textColor="@color/text_light"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_marginBottom="16dp"
+                    android:hint="02/20/2022"/>
+
+            </LinearLayout>
+
+
+            <!-- End date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#60000000">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="Start date:"
+                    android:textColor="@color/text_light"
+                    android:textAppearance="@style/TextAppearance.Material3.LabelLarge"/>
+
+                <TextView
+                    android:id="@+id/enddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textColor="@color/text_light"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_marginBottom="16dp"
+                    android:hint="02/20/2022"/>
+
+            </LinearLayout>
+
+            <!-- Excursion header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/testView2"
+                android:text="Excursions"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- RecyclerView for excursion list -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/excRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"/>
+                <!--tools:listitem="@layout/item_excursion" /-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Next"
+        android:src="@drawable/outline_add_24"
+        app:layout_anchor="@id/excRecyclerView"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_margin="24dp"
+        app:backgroundTint="@color/primary"
+        android:tint="@color/white"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

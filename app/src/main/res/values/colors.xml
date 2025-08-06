@@ -2,4 +2,27 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="navy">#FF000080</color>
+
+    <!-- Primary Colors -->
+    <color name="primary">#00BFA6</color>           <!-- Tropical Teal -->
+    <color name="primary_variant">#00796B</color>   <!-- Ocean Blue -->
+
+    <!-- Accent / FAB -->
+    <color name="accent">#FF6F61</color>            <!-- Sunset Coral -->
+
+    <!-- Backgrounds -->
+    <color name="background">#FAFAF0</color>        <!-- Sand White -->
+    <color name="card_background">#FFFFFF</color>   <!-- Pure White -->
+
+    <!-- Text Colors -->
+    <color name="text_primary">#333333</color>      <!-- Slate Gray -->
+    <color name="text_secondary">#777777</color>    <!-- Cool Gray -->
+    <color name="text_light">#70CFB6</color>        <!-- Light Ocean Blue -->
+
+    <!-- Highlight / Link -->
+    <color name="link">#29B6F6</color>              <!-- Sky Blue -->
+
+    <!-- Error / Warning -->
+    <color name="error">#FF7043</color>             <!-- Sunset Orange -->
 </resources>
