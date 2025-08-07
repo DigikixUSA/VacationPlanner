@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.digikixusa.vacationplanner.R;
-import com.example.d424_softwareengineeringcapstone.entities.Exc;
+import com.digikixusa.vacationplanner.entities.Exc;
 
 import java.util.List;
 
